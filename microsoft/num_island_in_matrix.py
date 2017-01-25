@@ -82,11 +82,13 @@ def test_num_island_in_matrix():
 	m2 = [[1, 0, 1, 0, 1], [0, 0, 0, 1, 1], [1, 0, 0, 0, 0]]
 	m3 = [[1, 1, 0, 0, 1, 1], [1, 0, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1], [1, 1, 1, 0, 1, 0], [0, 1, 0, 0, 0, 1]]
 	m4 = [[1, 1, 0, 1, 0], [0, 0, 0, 1, 0], [1, 1, 0, 0, 0], [0, 0, 0, 0, 1], [1, 0, 1, 0, 0]]
+	m5 = [[1, 0, 1, 0, 0, 0], [0, 1, 0, 1, 1, 0], [0, 0, 0, 0, 0, 1], [1, 0, 0, 1, 1, 0], [1, 1, 1, 0, 0, 0]]
 
 	assert num_island_in_matrix(m1) == 2
 	assert num_island_in_matrix(m2) == 3
 	assert num_island_in_matrix(m3) == 3
 	assert num_island_in_matrix(m4) == 6
+	assert num_island_in_matrix(m5) == 1
 
 	print("All tests passed.")
 
